@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  producer:
+    build:
+      context: .
+      dockerfile: ./producer/Dockerfile
+    environment:
+      - GRPC_URL=0.0.0.0:5000
+    ports:
+      - "5000:5000"
+    networks:
+      - zionix-network
+
+  consumer:
+    build:
+      context: .
+      dockerfile: ./consumer/Dockerfile
+    environment:
+      - PRODUCER_URL=producer:5000
+    depends_on:
+      - producer
+    ports:
+      - "3001:3001"
+    networks:
+      - zionix-network
+
+networks:
+  zionix-network:
+    driver: bridge

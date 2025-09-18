@@ -1,0 +1,25 @@
+{
+  "name": "zionix-grpc",
+  "version": "1.0.0",
+  "description": "This project demonstrates a pair of NestJS microservices that communicate using GRPC. The Producer service reads a JSON file containing user data, filters users based on age criteria (age > 18), and sends the filtered list to the Consumer service. The Consumer service invokes the Producer, receives the filtered data, and logs it to the console.",
+  "keywords": [
+    "grpc;",
+    "nestjs;",
+    "microservice"
+  ],
+  "homepage": "https://github.com/3rmak/zionix_grpc#readme",
+  "bugs": {
+    "url": "https://github.com/3rmak/zionix_grpc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3rmak/zionix_grpc.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
