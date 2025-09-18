@@ -4,8 +4,7 @@
   "description": "Producer service for GRPC communication",
   "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node src/main.ts",
-    "start:docker": "node -r ts-node/register src/main.ts",
+    "start": "node -r ts-node/register src/main.ts",
     "build": "tsc",
     "test": "jest"
   },

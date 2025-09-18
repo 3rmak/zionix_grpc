@@ -13,4 +13,4 @@ COPY producer ./producer
 WORKDIR /app/producer
 ENV GRPC_URL=0.0.0.0:5000
 
-CMD ["npm", "run", "start:docker"]
+CMD ["npm", "run", "start"]
